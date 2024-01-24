@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ChatbotInterface from './ChatbotInterface'; // Ensure correct path
+import ChatbotInterface from '../Components/ChatbotInterface.jsx'; // Ensure correct path
 import './DocumentViewer.css'; // Ensure CSS file exists
 
 const DocumentViewer = ({ pdfUrl }) => {

@@ -16,6 +16,10 @@ const Sidebar = () => {
     navigate('/timeline'); // Update this to your timeline page route
   };
 
+  const navigateToDocument = () => {
+    navigate('/document'); // Update this to your timeline page route
+  };
+
   return (
     <aside className="sidebar">
       <div className="sidebar-logo">
@@ -25,7 +29,7 @@ const Sidebar = () => {
         <p className="menu-heading">MENU</p>
         <button className="menu-item dashboard" onClick={navigateToFamily}>Dashboard</button>
         <button className="menu-item records" onClick={navigateToTimeline}>Records</button>
-        <button className="menu-item analytics">Analytics</button>
+        <button className="menu-item analytics" onClick={navigateToDocument}>Analytics</button>
         <button className="menu-item appointments">Appointments</button>
       </div>
       <div className="sidebar-general">

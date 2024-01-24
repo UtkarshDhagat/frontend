@@ -4,6 +4,7 @@ import LoginPage from '../pages/LoginPage';
 import SignupPage from '../pages/SignupPage';
 import FamilyPage from '../pages/FamilyPage';
 import TimeLinePage from '../pages/TimelinePage';
+import DocumentViewer from '../pages/DocumentViewer';
 import './App.css';
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
         <Route path="/signup" element={<SignupPage />} />
         <Route path="/family" element={<FamilyPage />} />
         <Route path="/timeline" element={<TimeLinePage />} />
-        {/* Add other routes as needed */}
+        <Route path="/document" element={<DocumentViewer />} />
       </Routes>
     </Router>
   );
