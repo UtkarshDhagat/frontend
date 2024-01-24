@@ -1,0 +1,51 @@
+.form-row {
+    margin-bottom: 20px;
+}
+
+.input-data {
+    position: relative;
+}
+
+.input-data input {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.input-data label {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    transition: all 0.3s ease-out;
+}
+
+.input-data input:focus + .underline {
+    transform: scaleX(1);
+}
+
+.input-data input:focus + .underline + label {
+    transform: translateY(-30px);
+}
+
+.underline {
+    position: relative;
+    top: -1px;
+    height: 2px;
+    background: #111;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in;
+}
+
+.Button-data {
+    padding: 10px 20px;
+    background: #ff6688;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.Button-data:hover {
+    background: #ff7799;
+}
