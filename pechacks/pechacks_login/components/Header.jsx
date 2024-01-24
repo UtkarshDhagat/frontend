@@ -1,9 +1,9 @@
 import React from 'react';
 import './Header.css'; // Importing the CSS file
-import searchIcon from '../public/search.png'; // Importing the search icon
-import messageIcon from '../public/1.png'; // Importing the message icon
-import alertIcon from '../public/2.png'; // Importing the alert icon
-import exitIcon from '../public/3.png'; // Importing the exit icon
+import searchIcon from '../src/assets/search.png'; // Importing the search icon
+import messageIcon from '../src/assets/1.png'; // Importing the message icon
+import alertIcon from '../src/assets/2.png'; // Importing the alert icon
+import exitIcon from '../src/assets/3.png'; // Importing the exit icon
 
 const Header = ({ toggleSidebar }) => {
   const handleSearch = () => {

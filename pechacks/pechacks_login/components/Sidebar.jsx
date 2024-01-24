@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Sidebar.css';
-import logo from '../public/logo.png'; // Ensure this import matches the file name and location
+import logo from '../src/assets/logo.png'; // Ensure this import matches the file name and location
 
 const Sidebar = () => {
   const navigate = useNavigate();
