@@ -249,12 +249,3 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     text-align: left;  
     padding-left: 10px;
 }
-
-/* .footerdiv{
-    position: absolute;
-    bottom: 30px;
-    width: 95%;
-    height: 45px;
-    text-align: center;
-
-} */

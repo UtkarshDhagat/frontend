@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Familymemberlist.css'
 import Modal from 'react-modal'; 
-import Card from './Card';
+import Card from './Card.jsx';
 
 const FamilyMemberList = () => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
