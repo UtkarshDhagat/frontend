@@ -8,8 +8,8 @@ const Signup = () => {
     const navigate = useNavigate();
 
     // Function to handle navigation to the login page
-    const handleLoginNavigation = () => {
-        navigate('/'); // Navigate to the login page
+    const handleFamilyNavigation = () => {
+        navigate('/family'); // Navigate to the login page
     };
 
     return (
@@ -33,7 +33,7 @@ const Signup = () => {
                                 <input type="password" id="password" name="password" placeholder="Password" required />
                             </div>
                             <div className="footer-group">
-                                <button type="submit" className="login-button">Signup</button>
+                                <button type="submit" className="login-button" onClick={handleFamilyNavigation}>Signup</button>
                                 <br />
                                 <div className="media-options">
                                     <button type="button" className="login-button1">
