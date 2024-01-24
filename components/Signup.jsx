@@ -41,7 +41,6 @@ const Signup = () => {
                                         Signup with Google
                                     </button>
                                 </div>
-                                <p>Already have an account? <span onClick={handleLoginNavigation} className="signup-link">Login</span></p>
                             </div>
                         </form>
                     </div>

@@ -13,6 +13,10 @@ const Login = () => {
         navigate('/family'); // Navigate to the FamilyPage after "login"
     };
 
+    const handleLoginNavigation = () => {
+        navigate('/signup'); // Navigate to the login page
+    };
+
     return (
         <div>
             <div className="left-container">
@@ -42,7 +46,7 @@ const Login = () => {
                                         Login with Google
                                     </button>
                                 </div>
-                                {/* Add navigation to Signup page if needed */}
+                                <p>Already have an account? <span onClick={handleLoginNavigation} className="signup-link">Signup</span></p>
                             </div>
                         </form>
                     </div>
