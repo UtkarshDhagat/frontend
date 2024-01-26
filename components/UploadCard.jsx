@@ -1,8 +1,42 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './UploadCard.css';
-import upload from '../src/assets/upload.jpg'; 
+import TimelineCard from './Timelinecard.jsx';
 
 const UploadCard = () => {
+    const [timelineData, setTimelineData] = useState([]);
+    const [formData, setFormData] = useState({
+        label1: '',
+        label2: '',
+        label3: '',
+        fileUploaded: false
+    });
+
+    const handleInputChange = (event) => {
+        setFormData({
+            ...formData,
+            [event.target.name]: event.target.value
+        });
+    };
+
+    const handleFileChange = (event) => {
+        setFormData({
+            ...formData,
+            fileUploaded: !!event.target.files[0]
+        });
+    };
+
+    const handleFormSubmit = (event) => {
+        event.preventDefault();
+        setTimelineData([...timelineData, formData]);
+        setFormData({
+            date: '',
+            label1: '',
+            label2: '',
+            label3: '',
+            fileUploaded: false
+        });
+    };
+
     return (
         <div className='Parent'>
             <div className='DetailsDiv'>
@@ -13,41 +47,41 @@ const UploadCard = () => {
                 </div> 
             </div>
             <div className='Parentdiv2'>
-                <div className='TimelineDiv'></div>
+           
+                <div className='TimelineDiv'>
+                <div className='TimelineCard'>
+                    {timelineData.sort((a, b) => new Date(a.date) - new Date(b.date)).map((data, index) => (
+                        <TimelineCard key={index} data={data} />
+                    ))}
+                </div>
+            </div>    
                 <div className='uploadbox'>
-                    <form>
+                    <form onSubmit={handleFormSubmit}>
                         <div className='updiv'>
                             <div className='labeltextdiv'>
                                 <p className='LabelText1'>Upload Reports</p>
                             </div>
                             <div className='upload-file-modal'>
-                                {/* <div className='upload-icon  img'>
-                                    <img src={upload}  alt='Upload Icon' />
-                                </div> */}
-                                <div className='LabelText upload-text'>
-                                    Drag and Drop file here or  
-                                    <label className='choose-file-btn'>
-                                     Choose file
-                                        <input type='file' name='image' accept='image/*' required style={{display: 'none'}} />
-                                    </label>
-                                </div>
-                                </div>
-                                <label className='LabelText'> Date 
-                                    <input className="myInput" type="date" name="dob" required />
+                                <label className='LabelText'> File
+                                    <input className="myInput" type="file"  onChange={handleFileChange} />
                                 </label>
-                                <label className='LabelText'> Label 
-                                    <input className="myInput" type="text" name="name" required />
+                                <label className='LabelText'> Date
+                                    <input className="myInput" type="date" name="date" value={formData.date} onChange={handleInputChange} required />
                                 </label>
-                                <label className='LabelText'> Label 
-                                    <input className="myInput" type="text" name="name" required />
+                                <label className='LabelText'> Label1 
+                                    <input className="myInput" type="text" name="label1" value={formData.label1} onChange={handleInputChange} required />
                                 </label>
-                                <label className='LabelText'> Label 
-                                    <input className="myInput" type="text" name="name" required />
+                                <label className='LabelText'> Label2 
+                                    <input className="myInput" type="text" name="label2" value={formData.label2} onChange={handleInputChange} required />
                                 </label>
+                                <label className='LabelText'> Label3
+                                    <input className="myInput" type="text" name="label3" value={formData.label3} onChange={handleInputChange} required />
+                                </label>
+                                
                                 <div className='ModalButtonDiv'>
                                     <button className='modalbutton' type="submit">Add Report</button>
                                 </div>
-                            
+                            </div>
                         </div>
                     </form>
                 </div>

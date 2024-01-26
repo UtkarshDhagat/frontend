@@ -32,6 +32,7 @@ box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* new */
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* applies to all sides */
     max-height: 500px; 
     overflow-y: auto; 
+
 }
 
 
@@ -209,19 +210,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     padding:7px;
 }
 
-/* Styles for the upload file modal */
-.upload-file-modal {
-    border: 2px dashed black;
-    border-radius: 8px;
-    padding: 30px;
-    text-align: center;
-    background-color: lightblue;
-    position: relative;
-    width: 80%;
-    margin: 0 auto;
-    max-width: 500px;
-    height: 4%; /* Adjust as needed */
-}
+
   
   /* Styles for the upload icon in the modal */
 .upload-icon img {
@@ -247,4 +236,4 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
   
 
-  
+

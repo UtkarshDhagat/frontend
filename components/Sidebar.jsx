@@ -27,10 +27,9 @@ const Sidebar = () => {
       </div>
       <div className="sidebar-menu">
         <p className="menu-heading">MENU</p>
-        <button className="menu-item dashboard" onClick={navigateToFamily}>Dashboard</button>
-        <button className="menu-item records" onClick={navigateToTimeline}>Records</button>
+        <button className="menu-item dashboard" onClick={navigateToFamily}>Family Page</button>
+        <button className="menu-item records" onClick={navigateToTimeline}>Timeline</button>
         <button className="menu-item analytics" onClick={navigateToDocument}>Analytics</button>
-        <button className="menu-item appointments">Appointments</button>
       </div>
       <div className="sidebar-general">
         <p className="menu-heading">GENERAL</p>
