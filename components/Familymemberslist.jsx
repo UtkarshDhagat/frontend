@@ -58,7 +58,7 @@ const FamilyMemberList = () => {
             </div>
 
             <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)}
-            className="ReactModal__Content">
+            className="ReactModal_Content">
                 <form onSubmit={handleSubmit}>
                     <label className='LabelText'> Name 
                         <input className="myInput" type="text" name="name" value={newMember.name} onChange={handleInputChange} required />

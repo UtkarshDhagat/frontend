@@ -116,8 +116,8 @@
 
 .ReactModal__Content {
     position: fixed;
-    top: 65%; /* same as .myInput */
-    left: 60%; /* same as .myInput */
+    top: 65%; 
+    left: 60%; 
     transform: translate(-50%, -50%);
     background: #fff;
     overflow: auto;
@@ -127,9 +127,8 @@
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
     transition: all 0.3s ease-in-out;
     width: 30%;
-    height: 35%; /* adjust as needed */
+    height: 35%; 
 }
-
 
 
 .myInput {
@@ -144,15 +143,15 @@
 
 
 .modalbutton {
-    background: lightblue; /* make the color of the button blue */
-    color: white; /* make the text white */
+    background: lightblue; 
+    color: white; 
     padding: 3.5px;
     box-sizing: border-box;
-    border: 1px solid gray; /* add an outline */
+    border: 1px solid gray; 
     border-radius: 8px;
-    width: 100%; /* align the width */
+    width: 100%;
     height: 135%;
-}
+} 
 
 .LabelText{
     color: black;
@@ -166,10 +165,10 @@
 .ModalButtonDiv{
     display: flex;
     justify-content: flex-end;
-    align-items: center; /* align the height */
+    align-items: center; 
     height: 10%;
     margin-left: 60%;
-    width: 40%; /* adjusted */
+    width: 40%; 
 }
 
 .LabelText1{
@@ -180,7 +179,7 @@
     margin: 10px 0;
     font-weight: bold;
     padding-bottom: 4px;
-} 
+}  
 
 .familyname{
     text-align: left;
@@ -192,9 +191,9 @@
 }
 
 .ptagdiv{
-    justify-content: flex-end; /* new */
+    justify-content: flex-end; 
     height: 100%;
-    width: 18%; /* adjusted */
+    width: 18%; 
     padding: 0px;
 
 }
@@ -202,9 +201,9 @@
 
 @media screen and (max-width: 600px) {
     .headingdiv {
-        flex-direction: column; /* stack the p tags vertically */
-        align-items: center; /* center the p tags horizontally */
-        gap: 10px; /* reduce the spacing between the p tags */
+        flex-direction: column; 
+        align-items: center; 
+        gap: 10px; 
     }
 }
 
