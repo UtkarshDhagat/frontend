@@ -62,20 +62,20 @@ const UploadCard = () => {
                                 <p className='LabelText1'>Upload Reports</p>
                             </div>
                             <div className='upload-file-modal'>
-                                <label className='LabelText'> File
-                                    <input className="myInput" type="file"  onChange={handleFileChange} />
+                                <label className='LabelTextupload'> File
+                                    <input className="myInput1" type="file"  onChange={handleFileChange} />
                                 </label>
-                                <label className='LabelText'> Date
-                                    <input className="myInput" type="date" name="date" value={formData.date} onChange={handleInputChange} required />
+                                <label className='LabelTextupload'> Date
+                                    <input className="myInput1" type="date" name="date" value={formData.date} onChange={handleInputChange} required />
                                 </label>
-                                <label className='LabelText'> Label1 
-                                    <input className="myInput" type="text" name="label1" value={formData.label1} onChange={handleInputChange} required />
+                                <label className='LabelTextupload'> Label1 
+                                    <input className="myInput1" type="text" name="label1" value={formData.label1} onChange={handleInputChange} required />
                                 </label>
-                                <label className='LabelText'> Label2 
-                                    <input className="myInput" type="text" name="label2" value={formData.label2} onChange={handleInputChange} required />
+                                <label className='LabelTextupload'> Label2 
+                                    <input className="myInput1" type="text" name="label2" value={formData.label2} onChange={handleInputChange} required />
                                 </label>
-                                <label className='LabelText'> Label3
-                                    <input className="myInput" type="text" name="label3" value={formData.label3} onChange={handleInputChange} required />
+                                <label className='LabelTextupload'> Label3
+                                    <input className="myInput1" type="text" name="label3" value={formData.label3} onChange={handleInputChange} required />
                                 </label>
                                 
                                 <div className='ModalButtonDiv'>

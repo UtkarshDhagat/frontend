@@ -121,13 +121,13 @@ box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* new */
 
 
 
-.LabelText {
+.LabelTextupload{
     display: block;
     margin-bottom: 10px;
     color: black;
 }
 
-.myInput {
+.myInput1 {
     border: none;
     border-bottom: 1px solid black;
     outline: none;
