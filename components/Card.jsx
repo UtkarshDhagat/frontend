@@ -1,10 +1,10 @@
 import React from 'react';
 import './Card.css'
 
-const Card = ({ member }) => {
+const Card = ({ member, onNameClick }) => {
     return (
         <div className="card">
-            <div className='Nameptag'><p>{member.name}</p></div>
+            <div className='Nameptag'> <p onClick={() => onNameClick(member.name)}>{member.name}</p></div>
             <div className='SexPtag'><p>{member.sex}</p></div>
             <div className='DOBPtag'><p>{member.dob}</p></div>
             <div className='InsuraceIdPtag'><p>{member.phone}</p></div>

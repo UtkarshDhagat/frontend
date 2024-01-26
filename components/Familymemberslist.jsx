@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Familymemberlist.css'
+import { useNavigate } from 'react-router-dom';
 import Modal from 'react-modal'; 
 import Card from './Card.jsx';
 
@@ -7,6 +8,7 @@ const FamilyMemberList = () => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
     const [members, setMembers] = useState([]);
     const [newMember, setNewMember] = useState({name: '', sex: '', dob: '', phone: ''})
+    const navigate = useNavigate();
 
     const handleInputChange = (e) => {
         setNewMember({...newMember, [e.target.name]: e.target.value});
@@ -21,6 +23,10 @@ const FamilyMemberList = () => {
         const newMembers = [...members];
         newMembers.splice(index, 1);
         setMembers(newMembers);
+    }
+
+    const handleNavigation = (name) => {
+        navigate(`/Timeline`); // replace '/newPage' with the path you want to navigate to
     }
 
     return (
@@ -43,7 +49,7 @@ const FamilyMemberList = () => {
                                                     <div className='InsuraceIdPtag'><p>Insurance Id</p></div>
                                                     </div>
                         {members.map((member, index) => (
-                            <Card key={index} member={member} />
+                            <Card key={index} member={member} onNameClick={handleNavigation} />
                          ))}
                             
                         {/* <div className='footerdiv'><p>Family Data Monitorization</p></div> */}
