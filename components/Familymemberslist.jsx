@@ -43,7 +43,7 @@ const FamilyMemberList = () => {
                         </div> 
                     </div>    
                     <div className="Main">
-                        <div className='headingdiv'><div className='Nameptag'><p>Name</p></div>
+                        <div className='headingdiv'><div className='Nameptag1'><p>Name</p></div>
                                                     <div className='SexPtag'><p>Sex</p></div>
                                                     <div className='DOBPtag'><p>Date of Birth</p></div>
                                                     <div className='InsuraceIdPtag'><p>Insurance Id</p></div>
@@ -72,7 +72,7 @@ const FamilyMemberList = () => {
                     <label className='LabelText1'> Insurance Id 
                         <input className="myInput" type="tel" name="phone" value={newMember.phone} onChange={handleInputChange} required maxLength="8" />
                     </label>
-                    <div className='ModalButtonDiv'><button className='modalbutton' type="submit">Add Member</button></div>
+                    <div className='ModalButtonDiv'><button className='modalbutton1' type="submit">Add Member</button></div>
                 </form>
                 
             </Modal>

@@ -1,23 +1,21 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Sidebar.css';
-import logo from '../src/assets/logo.png'; // Ensure this import matches the file name and location
+import logo from '../src/assets/logo.png';
 
 const Sidebar = () => {
   const navigate = useNavigate();
 
-  // Function to handle navigation to the FamilyPage
   const navigateToFamily = () => {
-    navigate('/family'); // Update this to your family page route
+    navigate('/family');
   };
 
-  // Function to handle navigation to the TimelinePage
   const navigateToTimeline = () => {
-    navigate('/timeline'); // Update this to your timeline page route
+    navigate('/timeline');
   };
 
   const navigateToDocument = () => {
-    navigate('/document'); // Update this to your timeline page route
+    navigate('/document');
   };
 
   return (
@@ -29,7 +27,6 @@ const Sidebar = () => {
         <p className="menu-heading">MENU</p>
         <button className="menu-item dashboard" onClick={navigateToFamily}>Family Page</button>
         <button className="menu-item records" onClick={navigateToTimeline}>Timeline</button>
-        <button className="menu-item analytics" onClick={navigateToDocument}>Analytics</button>
       </div>
       <div className="sidebar-general">
         <p className="menu-heading">GENERAL</p>

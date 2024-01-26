@@ -2,12 +2,12 @@
     border-bottom: 1px solid gray;
     padding: 10px;
     margin-top: 5px;
-    background-color: powderblue;
-    height: 7%;
-    display: flex; /* Aligns the children (p tags) side by side */
-    justify-content: space-between; /* Distributes the children evenly */
-    align-items: center; /* Centers the children vertically */
-    gap: 20px; /* Adds some space between the children */
+    background-color: #98afc7;
+    height: 10%;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 20px; 
 }
 
 

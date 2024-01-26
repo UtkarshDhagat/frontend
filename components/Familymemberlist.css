@@ -7,9 +7,8 @@
     width: 80%; /* adjusted */
     height: 90%; /* adjusted */
     overflow: hidden;
-    border-top: 2px solid grey; /* new */
-    border-left: 2px solid grey; /* new */
     box-sizing: border-box;
+    background-color: white;
 }
 
 .Text{
@@ -33,7 +32,7 @@
 }
 
 .Main{
-    background-color: powderblue;
+    background-color: #98afc7;
     height: 72.5%;
     width: 95%;
     margin: 2.5%;
@@ -68,7 +67,7 @@
 
 .TotalPatients{
     display: flex;
-    background-color: bisque;
+    background-color: #ffc0d9;
     top: 2.5%;
     width: 95%;
     height: 12.5%;
@@ -91,7 +90,7 @@
 .Button{
     margin-right: 15px;
     border: 2px solid #808080;
-    background-color: bisque;
+    background-color: white;
     color: black;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* new */
     font-weight: bold; /* new */
@@ -100,7 +99,7 @@
 .Button1{
     margin-right: 15px;
     border: 2px solid #808080;
-    background-color: bisque;
+    background-color: white;
     color: black;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* new */
     font-weight: bold; /* new */
@@ -108,7 +107,7 @@
 .Button2{
     margin-right: 15px;
     border: 2px solid #808080;
-    background-color: bisque;
+    background-color: white;
     color: black;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* new */
     font-weight: bold; /* new */
@@ -142,8 +141,8 @@
 }
 
 
-.modalbutton {
-    background: lightblue; /* make the color of the button blue */
+.modalbutton1 {
+    background: #a3c1da; /* make the color of the button blue */
     color: white; /* make the text white */
     padding: 3.5px;
     box-sizing: border-box;
@@ -151,6 +150,7 @@
     border-radius: 8px;
     width: 100%; /* align the width */
     height: 135%;
+    color: black;
 }
 
 .LabelText{
@@ -216,10 +216,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .headingdiv {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    background-color: beige;
+    background-color: #98afc7;
     display: flex; 
     justify-content: flex-end;
-    border-bottom: 1px solid gray;
+    border-bottom: 2px solid gray;
     height: 14%;
 }
 
@@ -243,7 +243,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 
 }
-.Nameptag{
+.Nameptag1{
     width: 22.5%;
     text-align: left;  
     padding-left: 10px;

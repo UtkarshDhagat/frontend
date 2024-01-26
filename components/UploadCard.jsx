@@ -38,12 +38,12 @@ const UploadCard = () => {
     };
 
     return (
-        <div className='Parent'>
+        <div className='Parent1'>
             <div className='DetailsDiv'>
                 <div className='buttondiv'>
-                    <button type='button' className='Button'>+</button>   
-                    <button type='button' className='Button2'>S</button>  
-                    <button type='button' className='Button1'>?</button>  
+                    <button type='button' className='Button111'>+</button>   
+                    <button type='button' className='Button21'>S</button>  
+                    <button type='button' className='Button11'>?</button>  
                 </div> 
             </div>
             <div className='Parentdiv2'>
