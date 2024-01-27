@@ -5,9 +5,8 @@ import TimelineCard from './Timelinecard.jsx';
 const UploadCard = () => {
     const [timelineData, setTimelineData] = useState([]);
     const [formData, setFormData] = useState({
-        label1: '',
-        label2: '',
-        label3: '',
+        date: '',
+        description: '',
         fileUploaded: false
     });
 
@@ -30,9 +29,7 @@ const UploadCard = () => {
         setTimelineData([...timelineData, formData]);
         setFormData({
             date: '',
-            label1: '',
-            label2: '',
-            label3: '',
+            description: '',
             fileUploaded: false
         });
     };
@@ -68,14 +65,14 @@ const UploadCard = () => {
                                 <label className='LabelTextupload'> Date
                                     <input className="myInput1" type="date" name="date" value={formData.date} onChange={handleInputChange} required />
                                 </label>
-                                <label className='LabelTextupload'> Label1 
-                                    <input className="myInput1" type="text" name="label1" value={formData.label1} onChange={handleInputChange} required />
+                                <label className='LabelTextupload'> Ehr Labels 
+                                    <input className="myInput1" type="text" name="label1" value={formData.EhrLabels} onChange={handleInputChange} required />
                                 </label>
-                                <label className='LabelTextupload'> Label2 
-                                    <input className="myInput1" type="text" name="label2" value={formData.label2} onChange={handleInputChange} required />
+                                <label className='LabelTextupload'> description 
+                                    <input className="myInput1" type="text" name="description" value={formData.description} onChange={handleInputChange} required />
                                 </label>
-                                <label className='LabelTextupload'> Label3
-                                    <input className="myInput1" type="text" name="label3" value={formData.label3} onChange={handleInputChange} required />
+                                <label className='LabelTextupload'> Labels
+                                    <input className="myInput1" type="text" name="label3" value={formData.Labels} onChange={handleInputChange} required />
                                 </label>
                                 
                                 <div className='ModalButtonDiv'>
